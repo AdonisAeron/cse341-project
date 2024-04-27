@@ -1,0 +1,19 @@
+{
+  "name": "cse341-project",
+  "version": "1.0.0",
+  "description": "Project Week 1",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdonisAeron/cse341-project.git"
+  },
+  "author": "Trevor Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdonisAeron/cse341-project/issues"
+  },
+  "homepage": "https://github.com/AdonisAeron/cse341-project#readme"
+}
