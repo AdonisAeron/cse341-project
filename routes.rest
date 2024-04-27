@@ -1,0 +1,4 @@
+GET http://localhost:3000/contacts
+# The request above returns a json object with all the contacts currently on the mongoDB.
+GET http://localhost:3000/contacts/:id (e.g. contacts/650c5812c06bc031e32200a1)
+# The request above returns a json object with the specific contact that has the matching _id value on the mongoDB.
