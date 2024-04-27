@@ -1,4 +1,8 @@
 GET http://localhost:3000/contacts
-# The request above returns a json object with all the contacts currently on the mongoDB.
+# The local request above returns a json object with all the contacts currently on the mongoDB.
 GET http://localhost:3000/contacts/:id (e.g. contacts/650c5812c06bc031e32200a1)
-# The request above returns a json object with the specific contact that has the matching _id value on the mongoDB.
+# The local request above returns a json object with the specific contact that has the matching _id value on the mongoDB.
+GET https://cse341-project-94e7.onrender.com/contacts
+# The published request above returns a json object with all the contacts currently on the mongoDB.
+GET https://cse341-project-94e7.onrender.com/contacts/:id (e.g. contacts/650c5812c06bc031e32200a1)
+# The published request above returns a json object with the specific contact that has the matching _id value on the mongoDB.
