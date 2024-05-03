@@ -1,8 +1,38 @@
 GET http://localhost:3000/contacts
-# The local request above returns a json object with all the contacts currently on the mongoDB.
-GET http://localhost:3000/contacts/:id (e.g. contacts/650c5812c06bc031e32200a1)
-# The local request above returns a json object with the specific contact that has the matching _id value on the mongoDB.
+### The local request above returns a json object with all the contacts currently on the mongoDB.
+
+GET http://localhost:3000/contacts/650c5812c06bc031e32200a2
+### The local request above returns a json object with the specific contact that has the matching _id value on the mongoDB.
+
 GET https://cse341-project-94e7.onrender.com/contacts
-# The published request above returns a json object with all the contacts currently on the mongoDB.
+### The published request above returns a json object with all the contacts currently on the mongoDB.
+
 GET https://cse341-project-94e7.onrender.com/contacts/:id (e.g. contacts/650c5812c06bc031e32200a1)
-# The published request above returns a json object with the specific contact that has the matching _id value on the mongoDB.
+### The published request above returns a json object with the specific contact that has the matching _id value on the mongoDB.
+
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Smith",
+    "email": "johnsmith@gmail.com",
+    "favoriteColor": "Yellow",
+    "birthday": "12/12/20"
+}
+### local post to create a contact from a json object on the mongoDB.
+
+PUT http://localhost:3000/contacts/6635480fea823f3af7081af4 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Smith",
+    "email": "johnsmith2@gmail.com",
+    "favoriteColor": "periwinkle",
+    "birthday": "12/12/20"
+}
+### local put to update a contact from a json object on the mongoDB.
+
+DELETE http://localhost:3000/contacts/6635480fea823f3af7081af4 HTTP/1.1
+### local delete to remove a contact from a json object on the mongoDB.
