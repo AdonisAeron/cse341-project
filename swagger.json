@@ -5,7 +5,7 @@
     "description": "API to interact with contact information on a mongoDB server.",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-project-94e7.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
