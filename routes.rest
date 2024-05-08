@@ -22,7 +22,7 @@ content-type: application/json
 }
 ### local post to create a contact from a json object on the mongoDB.
 
-PUT http://localhost:3000/contacts/6635480fea823f3af7081af4 HTTP/1.1
+PUT http://localhost:3000/contacts/663bbf30b4365d41f301f5a3 HTTP/1.1
 content-type: application/json
 
 {
@@ -34,5 +34,5 @@ content-type: application/json
 }
 ### local put to update a contact from a json object on the mongoDB.
 
-DELETE http://localhost:3000/contacts/6635480fea823f3af7081af4 HTTP/1.1
+DELETE http://localhost:3000/contacts/663bbf30b4365d41f301f5a3 HTTP/1.1
 ### local delete to remove a contact from a json object on the mongoDB.

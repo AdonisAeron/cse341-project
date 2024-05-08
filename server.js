@@ -17,10 +17,21 @@ app.use((req, res, next) => {
 });
 app.use('/', require('./routes'));
 
+process.on('uncaughtException', (err, origin) => {
+    console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`)
+});
 mongodb.initDb((err) => {
     if(err) {
         console.log(err)
     } else {
-        app.listen(port, () => {console.log(`Connected to database on port ${port}`)});
+        server = app.listen(port, () => {console.log(`Connected to database on port ${port}`)});
     }
 });
+
+process.on('SIGINT', () => {
+    console.log('Received SIGINT. Shutting down gracefully.');
+    server.close(() => {
+      console.log('Process terminated');
+      process.exit(0);
+    });
+  });
