@@ -25,6 +25,32 @@
         }
       }
     },
+    "/login": {
+      "get": {
+        "tags": [
+          "Authentication"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/logout": {
+      "get": {
+        "tags": [
+          "Authentication"
+        ],
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
     "/api-docs": {
       "get": {
         "description": "",
@@ -183,6 +209,19 @@
           "204": {
             "description": "No Content"
           },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/github/callback": {
+      "get": {
+        "tags": [
+          "Authentication"
+        ],
+        "description": "",
+        "responses": {
           "500": {
             "description": "Internal Server Error"
           }
